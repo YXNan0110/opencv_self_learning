@@ -1,7 +1,7 @@
 import cv2 as cv
 import matplotlib.pyplot as plt
 
-img = cv.imread("C:/Users/hmtga/Documents/open_cv/face_detection/img1.jpg")
+img = cv.imread("C:/Users/hmtga/Documents/open_cv/opencv_self_learning/pictures_here/img1.jpg")
 
 # cv.imshow("new_window", img)
 # cv.waitKey(0)

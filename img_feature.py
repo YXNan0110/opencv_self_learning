@@ -10,7 +10,7 @@ import numpy as np
 # 图像必须为float32的数据类型，blockSize是邻域大小，ksize是Sobel核大小，k是自由参数(0.04,0.06)
 
 
-img = cv.imread("C:/Users/hmtga/Documents/open_cv/table.jpg")
+img = cv.imread("C:/Users/hmtga/Documents/open_cv/opencv_self_learning/pictures_here/table.jpg")
 gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
 gray = np.float32(gray)
 
@@ -33,7 +33,7 @@ plt.show()
 # corners = cv2.goodFeaturesToTrack ( image, maxcorners, qualityLevel, minDistance )
 # quality角点质量水平，在0-1之间，minDistance角点之间最小距离，返回Corners搜索到的角点
 
-img_cal = cv.imread("C:/Users/hmtga/Documents/open_cv/tv.jpg")
+img_cal = cv.imread("C:/Users/hmtga/Documents/open_cv/opencv_self_learning/pictures_here/tv.jpg")
 cal_gray = cv.cvtColor(img_cal, cv.COLOR_BGR2GRAY)
 
 Corners = cv.goodFeaturesToTrack(cal_gray, 1000, 0.1, 5)

@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
-img = cv.imread("C:/Users/hmtga/Documents/open_cv/dog.jpg")
+img = cv.imread("C:/Users/hmtga/Documents/open_cv/opencv_self_learning/pictures_here/dog.jpg")
 # 均值滤波
 blur = cv.blur(img, (5,5))   # 参数为kernel的大小
 fig, axes = plt.subplots(nrows=1, ncols=2, figsize=(10,8), dpi=100)

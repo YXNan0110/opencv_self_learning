@@ -8,7 +8,7 @@ import numpy as np
 
 # Sobel算子
 # 先将图像进行x，y方向分别卷积，因为溢出问题，所以要用16位的CV_16S，再将数据进行格式转换为8位
-img = cv.imread("C:/Users/hmtga/Documents/open_cv/horse.jpg", 0)
+img = cv.imread("C:/Users/hmtga/Documents/open_cv/opencv_self_learning/pictures_here/horse.jpg", 0)
 # Sobel卷积
 # Sobel_x_or_y = cv2.Sobel(src, ddepth, dx, dy, dst, ksize, scale, delta, borderType)
 x = cv.Sobel(img, cv.CV_16S, 1, 0)    # 对谁卷积谁就是1，剩下的就是0

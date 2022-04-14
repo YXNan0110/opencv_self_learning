@@ -24,7 +24,7 @@ b, g, r = cv.split(img)
 img = cv.merge ((b,g,r))
 
 # 当图片数组为RGB格式时可以利用拆分通道转换为BGR格式
-img_new = cv.imread("C:/Users/hmtga/Documents/open_cv/face_detection/img1.jpg")
+img_new = cv.imread("C:/Users/hmtga/Documents/open_cv/opencv_self_learning/pictures_here/img1.jpg")
 r1, g1, b1 = cv.split(img_new)
 img_resp = cv.merge((b1, g1, r1))
 

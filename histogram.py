@@ -9,7 +9,7 @@ import numpy as np
 # range：统计特征取值范围
 
 # 直方图绘制
-img = cv.imread("C:/Users/hmtga/Documents/open_cv/dog.jpg", 0)
+img = cv.imread("C:/Users/hmtga/Documents/open_cv/opencv_self_learning/pictures_here/dog.jpg", 0)
 histr = cv.calcHist([img], [0], None, [256], [0,256])   # 图像要加中括号，参数分别为通道，[0]or[0][1][2]，mask掩膜图像，bin的数目，像素值范围
 plt.figure(figsize=(10,6),dpi=100)
 plt.plot(histr)
@@ -35,7 +35,7 @@ axes[1,1].plot(mask_histr)
 
 # plt.show()
 
-img_new = cv.imread("C:/Users/hmtga/Documents/open_cv/histr.jpg", 0)
+img_new = cv.imread("C:/Users/hmtga/Documents/open_cv/opencv_self_learning/pictures_here/histr.jpg", 0)
 # 直方图均衡化
 # 提高对比度
 dst = cv.equalizeHist(img_new)

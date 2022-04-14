@@ -3,8 +3,8 @@ import cv2 as cv
 import matplotlib.pyplot as plt
 import numpy as np
 
-img_1 = cv.imread("C:/Users/hmtga/Documents/open_cv/pic_1.jpg")
-img_2 = cv.imread("C:/Users/hmtga/Documents/open_cv/pic_2.jpg")
+img_1 = cv.imread("C:/Users/hmtga/Documents/open_cv/opencv_self_learning/pictures_here/pic_1.jpg")
+img_2 = cv.imread("C:/Users/hmtga/Documents/open_cv/opencv_self_learning/pictures_here/pic_2.jpg")
 
 img_1 = cv.resize(img_1, (256,256))
 img_2 = cv.resize(img_2, (256,256))

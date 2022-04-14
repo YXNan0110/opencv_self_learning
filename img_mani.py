@@ -15,7 +15,7 @@ import numpy as np
 # 针对二维图像的高亮部分而言
 # 用核结构进行扫描，腐蚀是一旦有0全为0结构，膨胀是一旦有1全为1
 
-img = cv.imread("C:/Users/hmtga/Documents/open_cv/img_mani.jpg")
+img = cv.imread("C:/Users/hmtga/Documents/open_cv/opencv_self_learning/pictures_here/img_mani.jpg")
 # 核结构
 kernel = np.ones((5,5), np.uint8)
 # 图像腐蚀和膨胀
@@ -34,8 +34,8 @@ axes[2].imshow(img_dilate)
 # 闭运算
 # 先膨胀后腐蚀，消除闭合物体中的孔洞
 
-img_1 = cv.imread("C:/Users/hmtga/Documents/open_cv/open.jpg")
-img_2 = cv.imread("C:/Users/hmtga/Documents/open_cv/close.jpg")
+img_1 = cv.imread("C:/Users/hmtga/Documents/open_cv/opencv_self_learning/pictures_here/open.jpg")
+img_2 = cv.imread("C:/Users/hmtga/Documents/open_cv/opencv_self_learning/pictures_here/close.jpg")
 kernel_1 = np.ones((10,10), np.uint8)
 
 # 进行开闭运算

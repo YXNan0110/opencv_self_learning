@@ -3,7 +3,7 @@ import cv2 as cv
 import matplotlib.pyplot as plt
 import numpy as np
 
-img = cv.imread("C:/Users/hmtga/Documents/open_cv/face_detection/img1.jpg")
+img = cv.imread("C:/Users/hmtga/Documents/open_cv/opencv_self_learning/pictures_here/img1.jpg")
 
 # 图片尺寸
 rows, cols = img.shape[:2]    # shape输出三个参数，分别为高度，宽度，通道数

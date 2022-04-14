@@ -9,8 +9,8 @@ import numpy as np
 # method包括平方差匹配CV_TM_SQDIFF，相关匹配CV_TM_CCORR，相关系数匹配CV_TM_CCOEFF
 # 匹配后还需查找max位置，平方差匹配min是最佳匹配位置
 
-img_people = cv.imread("C:/Users/hmtga/Documents/open_cv/people.jpg")
-img_person = cv.imread("C:/Users/hmtga/Documents/open_cv/person.jpg")
+img_people = cv.imread("C:/Users/hmtga/Documents/open_cv/opencv_self_learning/pictures_here/people.jpg")
+img_person = cv.imread("C:/Users/hmtga/Documents/open_cv/opencv_self_learning/pictures_here/person.jpg")
 height, width, length = img_person.shape
 # 模板匹配
 res = cv.matchTemplate(img_people, img_person, cv.TM_CCORR)
@@ -30,7 +30,7 @@ plt.imshow(img_people[:,:,::-1])
 
 # 霍夫线检测
 # cv.HoughLines(img, rho, theta, threshold)参数分别为rho和theta的精确度，以及高于该阈值才被认为是直线
-img = cv.imread("C:/Users/hmtga/Documents/open_cv/calendar.jpg")
+img = cv.imread("C:/Users/hmtga/Documents/open_cv/opencv_self_learning/pictures_here/calendar.jpg")
 gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
 edges = cv.Canny(gray, 50, 150)# 边缘检测
 
